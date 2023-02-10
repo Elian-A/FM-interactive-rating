@@ -2,7 +2,7 @@ import { FC } from "react";
 import "./thankYou.styles.css";
 const ThankYou: FC<{ rating: number }> = ({ rating }) => {
   return (
-    <div className="thank-you">
+    <article className="thank-you">
       <img
         src="/illustration-thank-you.svg"
         alt="orange dot and credict card floating around a cellphone which have a curvy paper emerging from within"
@@ -17,7 +17,7 @@ const ThankYou: FC<{ rating: number }> = ({ rating }) => {
           more support, don’t hesitate to get in touch!
         </p>
       </div>
-    </div>
+    </article>
   );
 };
 

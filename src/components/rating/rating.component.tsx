@@ -18,7 +18,7 @@ const Rating: FC<RatingInterface> = ({
     setSubmited(!submited);
   };
   return (
-    <div className="rating">
+    <article className="rating">
       <OptionWrapper disabled />
       <div className="text-wrapper">
         <h3 className="title">How did we do?</h3>
@@ -37,7 +37,7 @@ const Rating: FC<RatingInterface> = ({
       <button onClick={handleSubmit} className="button">
         Submit
       </button>
-    </div>
+    </article>
   );
 };
 
