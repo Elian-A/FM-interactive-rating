@@ -1,4 +1,8 @@
+.text-center {
+  text-align: center;
+}
 .thank-you {
+  max-width: 395px;
   padding: 1.5rem 1.5rem 2rem;
   display: grid;
   gap: 1.5rem;
@@ -14,9 +18,14 @@
 .text-wrapper {
   display: grid;
   gap: 0.5rem;
-  text-align: center;
 }
 .title {
   color: var(--clr-neutral-100);
   font-size: 1.5rem;
+}
+
+@media (min-width: 425px) {
+  .thank-you {
+    gap: 2rem;
+  }
 }

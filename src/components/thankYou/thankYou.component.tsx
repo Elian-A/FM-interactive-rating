@@ -9,7 +9,7 @@ const ThankYou = () => {
       <div className="selected-rating">
         <p>You selected 4 out of 5</p>
       </div>
-      <div className="text-wrapper">
+      <div className="text-wrapper text-center">
         <h3 className="title">Thank you!</h3>
         <p>
           We appreciate you taking the time to give a rating. If you ever need

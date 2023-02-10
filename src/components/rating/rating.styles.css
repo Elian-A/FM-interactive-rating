@@ -1,4 +1,5 @@
 .rating {
+  max-width: 373px;
   padding: 1.5rem 1.5rem 2rem;
   display: grid;
   gap: 1.5rem;
