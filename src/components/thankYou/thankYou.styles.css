@@ -1,0 +1,22 @@
+.thank-you {
+  padding: 1.5rem 1.5rem 2rem;
+  display: grid;
+  gap: 1.5rem;
+  justify-items: center;
+}
+.selected-rating {
+  max-width: fit-content;
+  border-radius: 2rem;
+  background-color: var(--clr-neutral-700);
+  color: var(--clr-primary-500);
+  padding: 0.5rem 1rem;
+}
+.text-wrapper {
+  display: grid;
+  gap: 0.5rem;
+  text-align: center;
+}
+.title {
+  color: var(--clr-neutral-100);
+  font-size: 1.5rem;
+}
