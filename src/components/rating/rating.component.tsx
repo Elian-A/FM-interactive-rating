@@ -1,6 +1,22 @@
+import { Dispatch, FC, SetStateAction } from "react";
 import OptionWrapper from "../optionWrapper/optionWrapper.component";
 import "./rating.styles.css";
-const Rating = () => {
+interface RatingInterface {
+  setSubmited: Dispatch<SetStateAction<boolean>>;
+  setRating: Dispatch<SetStateAction<number | null>>;
+  submited: boolean;
+  rating: number | null;
+}
+const Rating: FC<RatingInterface> = ({
+  submited,
+  setSubmited,
+  setRating,
+  rating,
+}) => {
+  const handleSubmit = () => {
+    if (rating === null) return;
+    setSubmited(!submited);
+  };
   return (
     <div className="rating">
       <OptionWrapper disabled />
@@ -12,13 +28,15 @@ const Rating = () => {
         </p>
       </div>
       <div className="options">
-        <OptionWrapper option="1" />
-        <OptionWrapper option="2" />
-        <OptionWrapper option="3" />
-        <OptionWrapper option="4" />
-        <OptionWrapper option="5" />
+        <OptionWrapper option="1" setRating={setRating} />
+        <OptionWrapper option="2" setRating={setRating} />
+        <OptionWrapper option="3" setRating={setRating} />
+        <OptionWrapper option="4" setRating={setRating} />
+        <OptionWrapper option="5" setRating={setRating} />
       </div>
-      <button className="button">Submit</button>
+      <button onClick={handleSubmit} className="button">
+        Submit
+      </button>
     </div>
   );
 };

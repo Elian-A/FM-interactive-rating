@@ -1,5 +1,6 @@
+import { FC } from "react";
 import "./thankYou.styles.css";
-const ThankYou = () => {
+const ThankYou: FC<{ rating: number }> = ({ rating }) => {
   return (
     <div className="thank-you">
       <img
@@ -7,7 +8,7 @@ const ThankYou = () => {
         alt="orange dot and credict card floating around a cellphone which have a curvy paper emerging from within"
       />
       <div className="selected-rating">
-        <p>You selected 4 out of 5</p>
+        <p>You selected {rating} out of 5</p>
       </div>
       <div className="text-wrapper text-center">
         <h3 className="title">Thank you!</h3>
